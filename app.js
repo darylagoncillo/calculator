@@ -42,6 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
     calculate();
     screen_div.textContent = previousValue;
   });
+
+  plusminus_button.addEventListener("click", () => {
+    currentValue = toggleSign(currentValue);
+    console.log(currentValue)
+    screen_div.textContent = currentValue;
+  });
+
 });
 
 let handleNumber = (num) => {
@@ -55,6 +62,10 @@ let handleOperator = (op) => {
   previousValue = currentValue;
   currentValue = "";
 };
+
+let toggleSign = (number) => {
+  return -number;
+}
 
 let calculate = () => {
   previousValue = Number(previousValue);
