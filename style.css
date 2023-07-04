@@ -35,7 +35,7 @@ body {
   grid-column: 1 / span 4;
   padding: 10px;
   text-align: right;
-  font-size: 55px;
+  font-size: 45px;
   width: 210px;
   border-radius: 5px;
   color: white;
@@ -46,6 +46,16 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+
+.number:hover, .plusminus:hover,
+.clear:hover, .percent:hover, .decimal:hover{
+  background-color: gray;
+}
+
+.operator:hover, .equals:hover {
+  background-color: #D4D4D2;
+  color: black;
 }
 
 .calculator button {
